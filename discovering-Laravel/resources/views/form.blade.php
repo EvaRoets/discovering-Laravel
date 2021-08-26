@@ -2,6 +2,6 @@
 
 @section('content')
 
-<p>This is the welcome page</p>
+<p>This is our form page.</p>
 
 @endsection
