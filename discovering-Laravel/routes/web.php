@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +17,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [\App\Http\Controllers\Controller::class, 'index'])->name('welcome');
+Route::get('/', [Controller::class, 'index'])->name('welcome');
 
-Route::get('home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('home', [HomeController::class, 'index'])->name('home');
 
-Route::get('form', [\App\Http\Controllers\FormController::class, 'index'])->name('form');
+Route::get('form', [FormController::class, 'index'])->name('form');
 
-Route::post('form', [\App\Http\Controllers\FormController::class, 'validateForm']);
+Route::post('form', [FormController::class, 'validateForm']);
