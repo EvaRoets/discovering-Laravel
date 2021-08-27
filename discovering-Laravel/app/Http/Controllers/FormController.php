@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Travel;
 use Illuminate\Http\Request;
 
 class FormController extends Controller
@@ -23,4 +24,6 @@ class FormController extends Controller
 
 
     }
+
+
 }

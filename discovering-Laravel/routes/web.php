@@ -1,9 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FormController;
+use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,7 @@ use App\Http\Controllers\FormController;
 
 Route::get('/', [Controller::class, 'index'])->name('welcome');
 
-Route::get('home', [HomeController::class, 'index'])->name('home');
+Route::get('home', [HomeController::class, 'show'])->name('home');
 
 Route::get('form', [FormController::class, 'index'])->name('form');
 
