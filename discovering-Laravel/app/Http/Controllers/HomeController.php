@@ -19,6 +19,7 @@ class HomeController extends Controller
         // object-relational mapper "Eloquent" (ORM): instead of select * from Travel => Travel::get();
         $list = Travel::get();
 
+
         // dump and die: just see tha database
         // dd($list);
 

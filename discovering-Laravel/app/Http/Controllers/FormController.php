@@ -20,8 +20,18 @@ class FormController extends Controller
         ]);
         // laravel saves errors automatically in error array that you can call in html
 
-        return view('form');
+        // create new model = insert new row in database
+        $formResponse = new Travel;
 
+        // get info from input field to be stored in database columns (zoals email maar form nog aanpassen)
+        $formResponse->activity = $request->email;
+        $formResponse->country = 'test';
+        $formResponse->checked = 'test2';
+        $formResponse->save();
+
+
+
+        return view('form');
 
     }
 
