@@ -19,3 +19,5 @@ Route::get('/', [\App\Http\Controllers\Controller::class, 'index'])->name('welco
 Route::get('home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('form', [\App\Http\Controllers\FormController::class, 'index'])->name('form');
+
+Route::post('form', [\App\Http\Controllers\FormController::class, 'validateForm']);

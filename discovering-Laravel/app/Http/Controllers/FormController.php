@@ -10,4 +10,17 @@ class FormController extends Controller
     {
         return view('form');
     }
+
+    public function validateForm(Request $request)
+    {
+        $request->validate([
+            'email' => 'email|required',
+            'password' => 'required'
+        ]);
+        // laravel saves errors automatically in error array that you can call in html
+
+        return view('form');
+
+
+    }
 }
