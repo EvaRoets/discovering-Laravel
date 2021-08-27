@@ -47,5 +47,11 @@
             Birman
             bombay, and savannah so ocicat. Bengal cheetah, and ragdoll malkin but persian or devonshire rex.</p>
     </div>
+    <ul>
+    @foreach($list as $listItem)
+            <li>{{ $listItem->activity }} </li>
+    @endforeach
+    </ul>
+
 
 @endsection
