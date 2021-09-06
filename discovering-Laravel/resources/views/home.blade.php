@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container justify-content-center">
-        <h1>Home page</h1>
+        <h1>Travel goals</h1>
         <p>This is our home page. Here is some random dummy content about... cats! What else?</p>
         <h2>Thai donskoy manx</h2>
         <h3>Maine coon norwegian forest jaguar</h3>

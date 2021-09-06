@@ -29,6 +29,10 @@ class FormController extends Controller
         $formResponse->checked = 'test2';
         $formResponse->save();
 
+        //update line
+        //TODO check syntax
+        //TODO create a new form and create new function in show
+       $formUpdate = Travel::where('activity', 'Visit an active volcano')->first();
 
 
         return view('form');
